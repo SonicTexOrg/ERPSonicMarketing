@@ -8,9 +8,6 @@
   InheritPersonalization="merge"
   ClearCacheOnRollback="true">
   <ViewUsage
-    Name="OrderDetailView1"
-    ViewObjectName="erpsonicmkt.erpsonicmktmodel.mktvo.OrderDetailView"/>
-  <ViewUsage
     Name="OrderMasterView1"
     ViewObjectName="erpsonicmkt.erpsonicmktmodel.mktvo.OrderMasterView"/>
 </AppModule>
