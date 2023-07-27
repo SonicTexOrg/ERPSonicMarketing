@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="erpsonicmkt.erpsonicmktmodel.mktam.ERPSonicMKTAppModule">
+      <AppModuleConfig name="ERPSonicMKTAppModuleLocal" jbo.project="erpsonicmkt.erpsonicmktmodel.ERPSonicMKTModel" ApplicationName="erpsonicmkt.erpsonicmktmodel.mktam.ERPSonicMKTAppModule" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="erpsonicmkt.erpsonicmktmodel.mktam.ERPSonicMKTAppModule"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/ERPSonicMKTConnDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="ERPSonicMKTAppModuleShared" jbo.project="erpsonicmkt.erpsonicmktmodel.ERPSonicMKTModel" ApplicationName="erpsonicmkt.erpsonicmktmodel.mktam.ERPSonicMKTAppModule" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="erpsonicmkt.erpsonicmktmodel.mktam.ERPSonicMKTAppModule"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/ERPSonicMKTConnDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

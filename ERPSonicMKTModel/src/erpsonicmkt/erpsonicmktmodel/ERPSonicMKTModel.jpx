@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="ERPSonicMKTModel"
+  Version="12.1.3.10.8"
+  SeparateXMLFiles="true"
+  PackageName="erpsonicmkt.erpsonicmktmodel">
+  <DesignTime>
+    <Attr Name="_jprName" Value="../../../ERPSonicMKTModel.jpr"/>
+    <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
+    <Attr Name="_NamedConnection" Value="ERPSonicMKTConn"/>
+    <Attr Name="_appModuleNames0" Value="erpsonicmkt.erpsonicmktmodel.mktam.ERPSonicMKTAppModule"/>
+  </DesignTime>
+  <Containee
+    Name="mktam"
+    PackageName="erpsonicmkt.erpsonicmktmodel.mktam"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="mkteo"
+    PackageName="erpsonicmkt.erpsonicmktmodel.mkteo"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="mktvo"
+    PackageName="erpsonicmkt.erpsonicmktmodel.mktvo"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <AppContainee
+    Name="ERPSonicSTPModule"
+    FullName="STP.model.ERPSonicSTPModule"
+    ObjectType="JboProject">
+    <DesignTime>
+      <Attr Name="_SourceName" Value="ERPSonicSetupLib.jar"/>
+    </DesignTime>
+  </AppContainee>
+</JboProject>
